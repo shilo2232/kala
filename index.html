@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You the Biggest Mitski Fan?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffc0cb; /* Pink background */
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #ff69b4; /* Pink button color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        /* Reduce size of last two images */
+        #result img {
+            max-width: 250px; /* Adjust this value as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://media.giphy.com/media/HgycnYQCMeJXO/giphy.gif?cid=790b7611golmw2mciylk7edfrp2p4mjwccl06y5cjdlo04j2&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Cat with a rose">
+    <h2>Is Klaudia the prettiest and most sweetest wife in the world? </h2>
+    <button class="button" onclick="yes()">Yes</button>
+    <button class="button" onclick="no()">No</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    function yes() {
+        var resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = "<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnJmYTc5dXdkZGxiZmV2djQ1N25jcjQ3cTIzeWtyNW9tbDFrZjRybyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/wIUQQ07BHzDry/giphy.gif' alt='Dancing Cat'><p>FUCK YA SHE IS! You truly are the perfect girlfriend my love. I am very proud on what you have accomplished in life. Im also so thankful to have you as a part of my life, you have truly made it so much better and I don't know where i would be without you. I LOVE YOU SO SO MUCH MWAH!</p>";
+    }
+
+    function no() {
+        var resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = "<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHVjM21zd2xvbmUwZzhtd3ZzNG8yYnJ0M3k1N2lqaDNmNXdyY3l1eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RzgaERxCVxHwc/giphy.gif' alt='Sad Cat'><p>Im sorry you're wrong! Please try again.</p>";
+    }
+</script>
+
+</body>
+</html>
